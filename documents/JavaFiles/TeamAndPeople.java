@@ -16,10 +16,12 @@ public class TeamAndPeople {
 		
 		if (numPlayers > 11) {
 			teamSize = 11;
-			teamSize = teamSize/2;
+			teamSize = numPlayers/2;
+			numPlayers = numPlayers+1;
 		} else {
 			teamSize = numPlayers;
-			teamSize = teamSize/2;
+			teamSize = numPlayers/2;
+			numPlayers = numPlayers+1;
 		}
 		
 		JOptionPane.showMessageDialog(null, "The number of people is " + numPeople + " and the size of the group is " + groupSize + 
